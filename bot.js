@@ -102,7 +102,7 @@ if (['weloff', 'велофф', 'велоф'].includes(command)) {
          message.channel.send('выключено');
 }
 if (['info', 'инфо', 'инфоо'].includes(command)) {
-         message.channel.send('это помошник серверу бот был создан 09.03.2018версия 1.0.1.1');
+         message.channel.send('это помошник серверу \n бот был создан 09.03.2018 \n версия 1.0.1.1');
 
  
 
