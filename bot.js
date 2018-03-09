@@ -97,6 +97,12 @@ if (['автор', 'author', 'автоор'].includes(command)) {
 
 if (['welon', 'велОН', 'велон'].includes(command)) {
          message.channel.send('в разработке');
+
+if (['weloff', 'велофф', 'велоф'].includes(command)) {
+         message.channel.send('в разработке');
+
+}
+}         
     
 });
 
