@@ -92,7 +92,7 @@ client.on("message", async message => {
 }
 
 if (['автор', 'author', 'автоор'].includes(command)) {
-         message.channel.send('автор бота: 😺๖ۣۣۜϺř.ķøŦ(ᵔᴥᵔ)😺#9456 https://discord.gg/MgVcb ');
+         message.channel.send('автор бота: 😺๖ۣۣۜϺř.ķøŦ(ᵔᴥᵔ)😺#9456  ');
 }
     
 });
