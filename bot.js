@@ -100,9 +100,13 @@ if (['welon', 'велОН', 'велон'].includes(command)) {
 }
 if (['weloff', 'велофф', 'велоф'].includes(command)) {
          message.channel.send('выключено');
- 
 }
-       
+if (['info', 'инфо', 'инфоо'].includes(command)) {
+         message.channel.send('это помошник серверу бот был создан 09.03.2018версия 1.0.1.1');
+
+ 
+
+}       
    
 });
  
