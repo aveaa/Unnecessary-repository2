@@ -91,7 +91,7 @@ client.on("message", async message => {
          message.channel.send('Помощь:  \n avatar - получить аватарку пользователя');
 }
 
-    }
+    
 });
 
 client.login(process.env.BOT_TOKEN).catch(err => {console.log(err)});
