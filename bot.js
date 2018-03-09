@@ -88,7 +88,7 @@ client.on("message", async message => {
 
     //Пример команды
     if (['help', 'хелп', 'допомога'].includes(command)) {
-         message.channel.send('Помощь: \n }}welON-включит привествия игроков  \n }}author-узнать автора  \n }}avatar - получить аватарку пользователя');
+         message.channel.send('Помощь: \n }}weloff-выключает привествия игроков  \n }}welon-включит привествия игроков  \n }}author-узнать автора  \n }}avatar - получить аватарку пользователя');
 }
 
 if (['автор', 'author', 'автоор'].includes(command)) {
@@ -96,6 +96,9 @@ if (['автор', 'author', 'автоор'].includes(command)) {
 }
 
 if (['welon', 'велОН', 'велон'].includes(command)) {
+         message.channel.send('в разработке');
+
+if (['weloff', 'велоф', 'велофф'].includes(command)) {
          message.channel.send('в разработке');
 
 }
