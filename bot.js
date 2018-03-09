@@ -91,7 +91,6 @@ client.on("message", async message => {
          message.channel.send('Помощь:  \n avatar - получить аватарку пользователя');
 }
 
-ы
     }
 });
 
