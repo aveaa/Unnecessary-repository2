@@ -1,0 +1,13 @@
+{
+  "name": "Critick",
+  "description": "бот создат для теста версия очень свежая спасибо zzigerза это всё",
+  "version": "0.0.1",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "discord.js": "11.3.0",
+    "request": "2.81.0"
+  }
+}
