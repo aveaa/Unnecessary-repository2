@@ -97,6 +97,7 @@ if (['автор', 'author', 'автоор'].includes(command)) {
 
 if (['welON', 'велОН', 'велон'].includes(command)) {
          message.channel.send('в разраблтки');
+         
 }
     
 });
