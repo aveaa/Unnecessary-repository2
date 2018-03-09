@@ -37,7 +37,7 @@ String.prototype.replaceAll = function(search, replacement) {
 
 client.on('ready', () => {
 	console.log('Bot loaded');
-	client.user.setPresence({ game: { name: `за твоими сообщениямиы`, type: 3 } }).catch();
+	client.user.setPresence({ game: { name: `на команду }}help`, type: 3 } }).catch();
 });
 
 client.on("message", async message => {
@@ -97,4 +97,14 @@ if (['автор', 'author', 'автоор'].includes(command)) {
     
 });
 
+client.on("guildMemberAdd", member => {
+   const embed = new Discord.RichEmbed()
+   .setTitle('Добро пожаловать')
+   .setColor("#ee83ac")
+   .setDescription("чем мы славимся: отзывчивая администрация, добрые участники,много ботов, общительные участники. Это всё на нашем сервере! Заходи!!!!!")
+   .setFooter(bot_name)
+   .setTimestamp();
+   member.send({embed});
+ });
 client.login(process.env.BOT_TOKEN).catch(err => {console.log(err)});
+ 
