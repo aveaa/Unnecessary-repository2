@@ -1,1 +1,1 @@
-﻿# Critick
+# Csritick

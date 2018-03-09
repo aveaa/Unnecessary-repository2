@@ -1,7 +1,7 @@
 {
   "name": "Critick",
   "description": "бот создат для теста версия очень свежая спасибо zzigerза это всё",
-  "version": "0.0.1",
+  "version": "0.0.1ы",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
