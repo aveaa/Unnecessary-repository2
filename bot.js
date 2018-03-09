@@ -37,7 +37,7 @@ String.prototype.replaceAll = function(search, replacement) {
 
 client.on('ready', () => {
 	console.log('Bot loaded');
-	client.user.setPresence({ game: { name: `как украсть аватарку`, type: 3 } }).catch();
+	client.user.setPresence({ game: { name: `за твоими сообщениямиы`, type: 3 } }).catch();
 });
 
 client.on("message", async message => {
@@ -87,8 +87,11 @@ client.on("message", async message => {
 	}
 
     //Пример команды
-    if (['help', 'название_команды_2', 'и_т.д.'].includes(command)) {
-        //тут код комманды
+    if (['help', 'хелп', 'допомога'].includes(command)) {
+         message.channel.send('Помощь:  \n avatar - получить аватарку пользователя');
+}
+
+ы
     }
 });
 
