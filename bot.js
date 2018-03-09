@@ -95,8 +95,8 @@ if (['автор', 'author', 'автоор'].includes(command)) {
          message.channel.send('автор бота: 😺๖ۣۣۜϺř.ķøŦ(ᵔᴥᵔ)😺#9456');
 }
 
-if (['welON', 'велОН', 'велон'].includes(command)) {
-         message.channel.send('в разрабjтки');
+if (['welon', 'велОН', 'велон'].includes(command)) {
+         message.channel.send('в разработки');
 
 }
     
