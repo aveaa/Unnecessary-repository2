@@ -91,6 +91,9 @@ client.on("message", async message => {
          message.channel.send('Помощь:  \n avatar - получить аватарку пользователя');
 }
 
+if (['автор', 'author', 'автоор'].includes(command)) {
+         message.channel.send('автор бота: 😺๖ۣۣۜϺř.ķøŦ(ᵔᴥᵔ)😺#9456 https://discord.gg/MgVcb ');
+}
     
 });
 
