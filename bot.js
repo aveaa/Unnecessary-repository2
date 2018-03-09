@@ -102,6 +102,7 @@ if (['weloff', 'велофф', 'велоф'].includes(command)) {
          message.channel.send('в разработке');
 
 }
+
 }         
     
 });
