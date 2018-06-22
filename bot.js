@@ -7,8 +7,8 @@ const client = new Discord.Client({ autofetch: [
         'MESSAGE_REACTION_REMOVE',
     ] });
 const creator_id = '285372240198107136';
-const bot_name = 'Critick';
- 
+const bot_name = 'Jond';
+ var p ="%"
 /** @namespace process.env.PREFIX */
 /** @namespace process.env.BOT_TOKEN */
  
@@ -55,7 +55,7 @@ client.on("message", async message => {
     let msg = message.channel.send(sayMessage).catch(()=>{message.reply('ты ебобо?');});
     }
  
-    if (['аватарка', 'ав', 'avatar', 'av'].includes(command)) {
+    if ([p + 'аватарка', 'ав', 'avatar', 'av'].includes(command)) {
         let member = message.mentions.members.first();
         if (!member)
         return message.author.send({embed: {
@@ -85,29 +85,18 @@ client.on("message", async message => {
            message.channel.sendMessage(`\`ERROR\``);
        }
     }
- 
-    //Пример команды
-    if (['help', 'хелп', 'допомога'].includes(command)) {
-         message.channel.send('Помощь:  \n }}info-знать о боте \n }}author-узнать автора  \n }}avatar - получить аватарку пользователя');
-}
- 
-if (['автор', 'author', 'автоор'].includes(command)) {
-         message.channel.send('автор бота: 😺๖ۣۣۜϺř.ķøŦ(ᵔᴥᵔ)😺#9456');
-}
- 
-if (['welon', 'велОН', 'велон'].includes(command)) {
-         message.channel.send('включено');
-}
-if (['weloff', 'велофф', 'велоф'].includes(command)) {
-         message.channel.send('выключено');
-}
-if (['info', 'инфо', 'инфоо'].includes(command)) {
-         message.channel.send('это помошник серверу \n бот был создан 09.03.2018 \n версия 1.0.1.1');
-
- 
-
-}       
-   
 });
- 
+    //Пример команды
+    client.on('message', message => {
+        if(message.content.startsWith(p + 'help')) {
+            const embed = new Discord.RichEmbed()
+                .setTitle("Помощь")
+                .setColor("#00BFFF")
+                .setDescription('Мои команды:\n ○ ***h!help***-пмощь по командам. \n ')
+                .setFooter("Jond")
+                .setTimestamp();
+                message.channel.send({embed});
+        }
+    });
+
 client.login(process.env.BOT_TOKEN).catch(err => {console.log(err)});
